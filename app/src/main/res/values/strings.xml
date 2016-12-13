@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">SoundCloud Musical App</string>
+
+    <!-- Activities -->
+    <string name="album_activity_title">Album</string>
+    <string name="artist_activity_title">Artist</string>
+    <string name="genre_search_result_activity_title">Genre Search Result</string>
+    <string name="genres_activity_title">Genres</string>
+    <string name="play_activity_title">Play</string>
+    <string name="search_results_activity_title">Search results</string>
+
+    <!-- Activities descriptions -->
+    <string name="album_activity_description">Displays a album details, with the artist\'s name,
+        the album\'s name, a picture of the album, a button to play all the tracks one after
+        another and the tracks\' names with a button to play each one individually.</string>
+    <string name="artist_activity_description">An activity that shows an overview of the artist
+        with a picture of him/her and shows all the albums and tracks.\nThe albums are displayed
+        with a picture, the album\'s name and a brief description of it.</string>
+    <string name="genre_search_result_activity_description_n">This activity shows a list of
+        albums by genre, it lets the user modify some search options like genre, order by and a
+        text filter to be applied to the results.\nBelow it, a list of albums is displayed, with
+        the album\'s picture and a brief description, which includes the artist\'s name, the year
+        it was released, a popularity gauge, etc.
+    </string>
+    <string name="main_activity_description">Here the users are able to search for
+        tracks using their names or part of their names, and also filter the tracks by their
+        license type.\nBelow the search box, there is a top charts displaying the most
+        played tracks by all the users\nAnd below the top charts there is a genres list, to
+        access the albums by genres.</string>
+    <string name="play_activty_description">Shows the track selected by the user, with a picture
+        of the album (when there is one), the artist\'s name, album\'s name, license type, and the
+        controls to play, pause and stop the music, to change the track being played in case it\'s
+        a album and a control that shows the progress of the music being played and which enables
+        the user to go forward or backward in music by clicking in it.</string>
+    <string name="search_results_activity_description">In this activity, the users are able to
+        see the results of theirs search, and modify the search options like the term that was
+        searched for, the license type, the order the search are displayed like: by artists name,
+        by tracks name, by license type, by release date, etc, and also apply some text filter to
+        the searched result, this would be useful if the users first searched for the artist name
+        and then they would want to limit the results by a specific text, some part of the track
+        name they remember, for example.\nBelow the search options, the results are displayed one
+        below the other, with a picture of the artist and the details of the track found.
+    </string>
+</resources>
