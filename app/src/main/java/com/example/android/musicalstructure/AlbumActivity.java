@@ -20,13 +20,7 @@ public class AlbumActivity extends AppCompatActivity {
         setContentView(R.layout.activity_album);
         ButterKnife.bind(this);
 
-        buttonPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentPlay = new Intent(AlbumActivity.this, PlayActivity
-                        .class);
-                startActivity(intentPlay);
-            }
-        });
+        Utils.addOnClickListenerToOpenActivity(buttonPlay, this, PlayActivity.class, Utils
+                .FINISH_CALLING_ACTIVITY);
     }
 }

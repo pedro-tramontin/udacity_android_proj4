@@ -22,22 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        buttonSearchResults.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentSearchResults = new Intent(MainActivity.this, SearchResultsActivity
-                        .class);
-                startActivity(intentSearchResults);
-            }
-        });
-
-        buttonGenres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentGenres = new Intent(MainActivity.this,
-                        GenreSearchResultActivity.class);
-                startActivity(intentGenres);
-            }
-        });
+        Utils.addOnClickListenerToOpenActivity(buttonSearchResults, this, SearchResultsActivity
+                .class, Utils.LEAVE_CALLING_ACTIVITY_OPEN);
+        Utils.addOnClickListenerToOpenActivity(buttonGenres, this, GenreSearchResultActivity
+                .class, Utils.LEAVE_CALLING_ACTIVITY_OPEN);
     }
 }

@@ -20,13 +20,7 @@ public class GenreSearchResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_genre_search_result);
         ButterKnife.bind(this);
 
-        buttonAlbum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentAlbum = new Intent(GenreSearchResultActivity.this, AlbumActivity
-                        .class);
-                startActivity(intentAlbum);
-            }
-        });
+        Utils.addOnClickListenerToOpenActivity(buttonAlbum, this, AlbumActivity.class, Utils
+                .FINISH_CALLING_ACTIVITY);
     }
 }

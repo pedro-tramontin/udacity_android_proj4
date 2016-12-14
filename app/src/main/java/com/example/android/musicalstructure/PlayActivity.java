@@ -22,22 +22,9 @@ public class PlayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_play);
         ButterKnife.bind(this);
 
-        buttonArtist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentArtist = new Intent(PlayActivity.this, ArtistActivity
-                        .class);
-                startActivity(intentArtist);
-            }
-        });
-
-        buttonAlbum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentAlbum = new Intent(PlayActivity.this, AlbumActivity
-                        .class);
-                startActivity(intentAlbum);
-            }
-        });
+        Utils.addOnClickListenerToOpenActivity(buttonArtist, this, ArtistActivity.class, Utils
+                .FINISH_CALLING_ACTIVITY);
+        Utils.addOnClickListenerToOpenActivity(buttonAlbum, this, AlbumActivity.class, Utils
+                .FINISH_CALLING_ACTIVITY);
     }
 }

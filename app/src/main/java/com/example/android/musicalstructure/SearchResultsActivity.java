@@ -20,13 +20,7 @@ public class SearchResultsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search_results);
         ButterKnife.bind(this);
 
-        buttonPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentPlay = new Intent(SearchResultsActivity.this, PlayActivity
-                        .class);
-                startActivity(intentPlay);
-            }
-        });
+        Utils.addOnClickListenerToOpenActivity(buttonPlay, this, PlayActivity.class, Utils
+                .FINISH_CALLING_ACTIVITY);
     }
 }
